@@ -1,0 +1,29 @@
+# Exclure node_modules car ils sont installés dans le conteneur (évite copie inutile et conflits)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+
+# Fichiers de logs et temporaires
+*.log
+logs/
+
+# Dépôt Git (pas nécessaire dans l'image)
+.git/
+.gitignore
+
+# Variables d'environnement (secrets, spécifiques à l'environnement)
+.env
+.env.*
+
+# Fichiers IDE et OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Tests et fichiers de dev (pas dans l'image de prod)
+test/
+coverage/
+
+# Autres fichiers inutiles
+README.md
+*.md
